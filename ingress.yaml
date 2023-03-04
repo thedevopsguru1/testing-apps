@@ -9,11 +9,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - app1.anaeleboo.com
-    - app2.anaeleboo.com
-    secretName: example-tls
+    - app3.anaeleboo.com
+    - app4.anaeleboo.com
+    secretName: example-tls-23456
   rules:
-  - host: app1.anaeleboo.com
+  - host: app3.anaeleboo.com
     http:
       paths:
       - pathType: Prefix
@@ -23,7 +23,7 @@ spec:
             name: hello-one
             port:
               number: 80
-  - host: app2.anaeleboo.com
+  - host: app4.anaeleboo.com
     http:
       paths:
       - pathType: Prefix
